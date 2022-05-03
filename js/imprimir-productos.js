@@ -1,5 +1,6 @@
+let url = '/js/data.json' 
 const traerDatos = async () =>{
-    const resp = await fetch('../js/data.json')
+    const resp = await fetch(url)
     const data = await resp.json()
     data.forEach( async (e) =>{
         console.log(e.category)
