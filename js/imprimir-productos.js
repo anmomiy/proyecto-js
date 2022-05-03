@@ -2,7 +2,7 @@ let url = '/js/data.json'
 const traerDatos = async () =>{
     const resp = await fetch(url)
     const data = await resp.json()
-    data.forEach( async (e) =>{
+    data.forEach( e =>{
         console.log(e.category)
         console.log(e.content)
         //prod = e.content;
