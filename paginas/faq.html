@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Preguntas frecuentes sobre la entrega, estado de los productos, entre otros">
+        <meta name="keywords" content="delivery, entregas, carne congelada, tamaño paquete">
+        <link rel="shortcut icon" href="..//assets/imagenes/favicon.png">
+        <title>Quinpro - Preguntas Frecuentes</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!--CDN Bootstrap-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="..//css/style.css">
+    </head>
+    <body>
+        <header class="flex-header">
+            <div class="quinproLogo">
+                <a href=..//index.html >                    
+                    <picture>
+                        <source media="(max-width: 575px)" srcset="..//assets/imagenes/logo-quinpro-180x51.jpg">
+                        <source media="(max-width: 922px)" srcset="..//assets/imagenes/logo-quinpro-250x71.jpg">
+                        <source media="(min-width: 923px)" srcset="..//assets/imagenes/logo-quinpro-320x91.jpg">
+                        <img src="..//assets/imagenes/logo-quinpro.JPG" alt="logo">
+                    </picture>
+                </a>
+                <h1>Carnes y Más</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black"> <!--navbar con bootstrap-->
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 h3 text-light" href="..//index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 h3 text-light" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link mb-0 h3 dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                                </a>
+                                <ul class="dropdown-menu bg-black mb-0 h3 " aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item text-light h4" href="./productos.html#ofertas">Ofertas</a></li>
+                                    <li><a class="dropdown-item text-light h4" href="./productos.html#res">Carne de Res</a></li>
+                                    <li><a class="dropdown-item text-light h4" href="./productos.html#cerdo">Carne de Cerdo</a></li>
+                                    <li><a class="dropdown-item text-light h4" href="./productos.html#pollo">Pollo / Otros</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link mb-0 h3 dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                FAQ
+                                </a>
+                                <ul class="dropdown-menu bg-black mb-0 h3" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item text-light h4" href="./faq.html#snosotros">Sobre Nosotros</a></li>
+                                    <li><a class="dropdown-item text-light h4" href="./faq.html#sproductos">Sobre los Productos</a></li>
+                                    <li><a class="dropdown-item text-light h4" href="./faq.html#sentrega">Sobre la Entrega</a></li>
+                                    <li><a class="dropdown-item text-light h4" href="./faq.html#otros">Otros</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 h3 text-light" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-faq">
+            <section class="barraIzquierda">
+                <nav class="MenuLateral">
+                    <a href="./faq.html" class="tituloFaq">FAQ</a>
+                    <ul>
+                        <a href="./faq.html#snosotros"><li>Sobre Nosotros</li></a>
+                        <a href="./faq.html#sproductos"><li>Sobre Los Productos</li></a>
+                        <a href="./faq.html#sentrega"><li>Sobre La Entrega</li></a>
+                        <a href="./faq.html#otros"><li>Otros</li></a>
+                    </ul>
+                </nav>
+            </section>
+            <section class="faqPrincipal"> <!--Uso de acordeones para mostrar/ocultar respuestas a las preguntas-->
+                <h3 id="snosotros">Sobre Nosotros</h3>
+                <div class="accordion">
+                    <ul class="accordionWrapper">
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Son una empresa formal?</h4>
+                            <div class="panel">
+                                <p>Sí, somos una empresa formal. Por ello, si desea que se le emita factura, puede solicitarlo al hacer su pedido.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿En dónde se encuentran?</h4>
+                            <div class="panel">
+                                <p>Nuestro local se encuentra en Miraflores, Lima.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Son una empresa peruana?</h4>
+                            <div class="panel">
+                                <p>Sí, somos una microempresa peruana, fundada en el 2020 como consecuencia de la pandemia.</p>
+                            </div> 
+                        </li> 
+                    </ul>
+                </div>
+                <h3 id="sproductos">Sobre Los Productos</h3>
+                <div class="accordion">
+                    <ul class="accordionWrapper">
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Venden carne refrigerada?</h4>
+                            <div class="panel">
+                                <p>No, todos nuestros productos son congelados.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Puedo solicitar que me envíen solo medio paquete?</h4>
+                            <div class="panel">
+                                <p>No, por motivos de higiene, nosotros no podemos abrir ningún paquete. Por ende, solo entregamos el paquete completo y sellado al vacío.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Cuál es la presentación de los productos?</h4>
+                            <div class="panel">
+                                <p>Todos nuestros productos están empacados al vacío. Además, cuentan con una etiqueta que indica el nombre del producto, fecha de producción y fecha de vencimiento.</p>
+                            </div> 
+                        </li>
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Tienen carne importada?</h4>
+                            <div class="panel">
+                                <p>No, solo vendemos carne nacional.</p>
+                            </div> 
+                        </li>  
+                    </ul>
+                </div>     
+                <h3 id="sentrega">Sobre La Entrega</h3>
+                <div class="accordion">
+                    <ul class="accordionWrapper">
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿El delivery es gratis?</h4>
+                            <div class="panel">
+                                <p>No, el costo depende de la zona. Realizamos delivery a todo Lima Metropolitana.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Puedo recogerlo en su local?</h4>
+                            <div class="panel">
+                                <p>Sí, puede recogerlo en el local ubicado en Miraflores dentro del horario de atención.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Puedo solicitar que se me entregue el pedido en la fecha que yo desee?</h4>
+                            <div class="panel">
+                                <p>Sí, siempre y cuando la fecha no supere los 7 días desde que se realizó el pedido.</p>
+                            </div> 
+                        </li> 
+                    </ul> 
+                </div> 
+                <h3 id="otros">Otros</h3>
+                <div class="accordion">
+                    <ul class="accordionWrapper">
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Cuáles son los métodos de pago?</h4>
+                            <div class="panel">
+                                <p>Puede realizar el pago por transferencia a la cuenta del BCP o por Yape.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Qué sucede si mi pedido no llega en condiciones óptimas?</h4>
+                            <div class="panel">
+                                <p>En caso haya un inconveniente con el producto, nos contactaremos con usted para realizar un reenvío.</p>
+                            </div> 
+                        </li> 
+                        <li class="accordionItem">
+                            <input type="checkbox" checked>
+                            <span>&#94;</span>
+                            <h4>¿Puedo pagar después de recibir mi pedido?</h4>
+                            <div class="panel">
+                                <p>No, deberá realizar el pago hasta 2 horas antes del horario de envío acordado.</p>
+                            </div> 
+                        </li> 
+                    </ul> 
+                </div>  
+            </section>
+            <section class="iconoWpp">
+                <a href="https://wa.me/51922296876" target="_blank"><img src="..//assets/imagenes/wpp-icon-662x664.png" alt="whatsapp-icono"></a>
+            </section>  
+        </main>
+        <footer class="flex-footer">
+            <div class="row">
+                <div class="col footerEnlaces">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="..//index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col footerFormulario">
+                    <h4>Recibe nuestro catálogo mensual</h4>
+                    <form action="https://formspree.io/f/xgedprkr" method="POST">
+                        <div class="mb-3 input-group-sm">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" name="name" class="form-control" id="formGroupExampleInput" required>
+                        </div>
+                        <div class="mb-3 input-group-sm">
+                            <label for="apellido" class="form-label">Apellido: </label>
+                            <input type="text" name="lastName" class="form-control" id="formGroupExampleInput2" required>
+                        </div>
+                        <div class="mb-3 input-group-sm">
+                            <label for="numero" class="form-label">Celular: </label>
+                            <input type="text" name="contactNum" class="form-control" id="formGroupExampleInput2" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+                    </form>
+                </div>
+                <div class="col footerRedes">
+                    <h4>Redes Sociales</h4>
+                    <div class="footerLRedes">
+                        <a href="https://www.facebook.com/QUINPRO-Carnes-y-más-100132708454710" target="_blank"><img src="..//assets/imagenes/facebook-icono.png" alt="facebook-icono"> Quinpro </a> 
+                        <a href="https://wa.me/51922296876" target="_blank"><img src="..//assets/imagenes/whatsapp-icono.png" alt="whatsapp-icono"> +51 922 296 876</a> 
+                        <a href="https://www.instagram.com/quinprocarnesymas" target="_blank"><img src="..//assets/imagenes/logo-instagram.png" alt="logo-instagram"> @quinprocarnesymas</a> 
+                    </div>
+                </div>
+            </div>
+            <section class="copyright row">
+                <hr class="footerLinea">
+                <h4>&copy; Copyright 2022</h4>
+            </section>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> <!--CDN Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>

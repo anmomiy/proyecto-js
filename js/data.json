@@ -1,0 +1,121 @@
+[
+    {
+        "category":"Oferta",
+        "content": [
+            {
+                "name":"Bife Ancho",
+                "image": "..//assets/imagenes/bife-ancho-min.jpg",
+                "price": "49.00",
+                "description": "Paquetes de aprox 1kg. Oferta válida hasta agotar stock.",
+                "stock": "15"
+            },
+            {
+                "name":"Bife Angosto",
+                "image": "..//assets/imagenes/bife-angosto-min.jpg",
+                "price": "49.00",
+                "description": "Paquetes de aprox 1kg. Oferta válida hasta agotar stock.",
+                "stock": "12"
+            }
+        ]
+    },
+    {
+        "category":"Res",
+        "content":[
+            {
+                "name":"Bisteck Bola de Lomo",
+                "image": "..//assets/imagenes/bisteck-lomo-min.jpg",
+                "price": "35.00",
+                "description": "Paquetes de 4 filetes de 120grs aprox.",
+                "stock": "18"
+            },
+            {
+                "name":"Carne Molida",
+                "image": "..//assets/imagenes/carne-molida-min.jpg",
+                "price": "32.00",
+                "description": "Paquetes de 500grs aprox.",
+                "stock": "15"
+            },
+            {
+                "name":"Entraña Fina",
+                "image": "..//assets/imagenes/entrana-fina-min.jpg",
+                "price": "45.00",
+                "description": "Paquetes de 1kg aprox.",
+                "stock": "6"
+            },
+            {
+                "name":"Guiso Especial",
+                "image": "..//assets/imagenes/guiso-especial-min.jpg",
+                "price": "33.00",
+                "description": "Paquetes de 500grs aprox.",
+                "stock": "10"
+            },
+            {
+                "name":"Lomo Fino",
+                "image": "..//assets/imagenes/lomo-fino-min.jpg",
+                "price": "69.00",
+                "description": "Paquetes de 1kg aprox.",
+                "stock": "4"
+            },
+            {
+                "name":"Picaña",
+                "image": "..//assets/imagenes/picanha-min.jpg",
+                "price": "59.00",
+                "description": "Paquete de 1.5kg aprox.",
+                "stock": "6"
+            }
+        ]
+    },
+    {
+        "category":"Cerdo",
+        "content":[
+            {
+                "name":"Costilla",
+                "image": "..//assets/imagenes/costilla-cerdo-min.jpg",
+                "price": "33.00",
+                "description": "Paquete de 1.3kg aprox.",
+                "stock": "4" 
+            },
+            {
+                "name":"Molida",
+                "image": "..//assets/imagenes/molida-cerdo-min.jpg",
+                "price": "19.00",
+                "description": "Paquete de 500grs aprox.",
+                "stock": "12" 
+            },
+            {
+                "name":"Panceta c/p c/h",
+                "image": "..//assets/imagenes/panceta-min.jpg",
+                "price": "27.00",
+                "description": "Paquete de 1kg aprox.",
+                "stock": "7" 
+            },
+            {
+                "name":"Solomillo",
+                "image": "..//assets/imagenes/solomillo-min.jpg",
+                "price": "32.00",
+                "description": "Paquete de 1kg aprox.",
+                "stock": "8" 
+            }
+        ]
+        
+    },
+    {
+        "category":"Otros",
+        "content":[
+            {
+                "name":"Pechuga de pollo",
+                "image": "..//assets/imagenes/pechuga-pollo-min.jpg",
+                "price": "19.50",
+                "description": "Paquete de 2kg aprox.",
+                "stock": "5" 
+            },
+            {
+                "name":"Hamburguesa clásica",
+                "image": "..//assets/imagenes/hamburguesa-clasica-min.jpg",
+                "price": "27.50",
+                "description": "Cada paquete contiene 8 hamburguesas de 150grs.",
+                "stock": "10" 
+            }
+        ]
+    }
+]
