@@ -2,11 +2,11 @@ const traerDatos = async () =>{
     const resp = await fetch('/js/data.json')
     const data = await resp.json()
     data.forEach( async (e) =>{
-        //console.log(e.category)
-        //console.log(e.content)
-        prod = e.content;
+        console.log(e.category)
+        console.log(e.content)
+        //prod = e.content;
         //console.log(prod.length)
-        console.log(prod[0].name)
+        //console.log(prod[0].name)
     })
 }
 /*secOfertas = document.getElementById("seccion-ofertas")*/
