@@ -1,4 +1,4 @@
-let url = '/js/data.json' 
+let url = '/proyecto-js/js/data.json' 
 const traerDatos = async () =>{
     const resp = await fetch(url)
     const data = await resp.json()
