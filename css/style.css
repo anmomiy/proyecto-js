@@ -500,6 +500,44 @@ footer {
     width: 50px;
     height: 50px; 
   }
+  .montoCarrito >h3{
+    width: 100%;
+    text-align: center;
+  }
+  .montoCarrito .botonPagar{
+    padding: 1%;
+    margin: 2% auto;
+  }
+  /*ResumeCompra*/
+  .main-resumen{
+    margin: 2% 0%;
+  }
+  .main-resumen h2{
+    text-align: center;
+  }
+  .resumenCompra{
+    max-width: 980px;
+    margin: 5% auto;
+    border-style: double;
+    padding: 5%
+  }
+  .resumenCompra > h2{
+    font-weight: 900;
+  }
+  .resumenCompra section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .resumenCompra section > p, h3{
+    width: 33%;
+    text-align: center;
+  }
+  .montoResumen{
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+  }
 /* Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
   /*Header*/

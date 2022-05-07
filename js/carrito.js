@@ -69,10 +69,11 @@ if(productosSeleccionados.length > 0){
     montoTotal.appendChild(monto)
     localStorage.setItem("monto",totalCompra)
     irPagar = document.createElement("button");
-    irPagar.innerHTML = "Ir a Pagar";
+    irPagar.innerHTML = "Comprar";
+    irPagar.className = "botonPagar";
     montoTotal.appendChild(irPagar)
     irPagar.onclick =()=>{
-        window.location ="../paginas/pago.html"
+        window.location ="../paginas/resumen-compra.html"
     } 
 }
 

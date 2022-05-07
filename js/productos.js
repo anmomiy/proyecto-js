@@ -1,5 +1,4 @@
-//Objetos
-    //Productos
+setTimeout(()=>{ //Asincronía para que este código empiece a funcionar luego de que los elementos se hayan creado en el DOM
     class Producto{ //Objeto para los productos de tienda
         constructor(id,nombre,precio,cant,total){
             this.id = id;
@@ -178,4 +177,4 @@ addHamburguesa.onclick = evento =>{
     alertaAgregar(hamburguesa);
 }
 console.log(carrito.length)
-
+},2000)
