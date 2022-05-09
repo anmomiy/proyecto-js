@@ -12,6 +12,7 @@ const montoPagar = (cant,precio) => cant * precio;
 const agregarCarrito = (objeto) =>{
     objeto.quantity != 0 && carrito.push(objeto);
     carrito.length != 0 && guardarLocal("carrito",JSON.stringify(carrito))
+    aumentarCarrito();
 };
 const guardarLocal = (clave,valor) => {localStorage.setItem(clave,valor)};
   
@@ -30,7 +31,15 @@ let addPanceta = document.getElementById('addPanceta');
 let addSolomillo = document.getElementById('addSolomillo');
 let addPechuga = document.getElementById('addPechuga');
 let addHamburguesa = document.getElementById('addHamburguesa');
-
+let iconoCarrito = document.getElementById('irCarrito');
+let numCarrito = document.createElement('p')
+let contador;
+const aumentarCarrito = () =>{
+    
+    contador = carrito.length;
+    numCarrito.innerHTML = contador;
+    iconoCarrito.appendChild(numCarrito);
+}
 //alertas 
 const alertaAgregar = producto =>{
     Swal.fire({
