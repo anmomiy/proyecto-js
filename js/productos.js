@@ -70,6 +70,17 @@ const alertaAgregar = producto =>{
         }
       })
 }
+const comprobarCant = (cant, producto) =>{
+    cant != 0 && alertaAgregar(producto);
+    if(cant == 0){
+        Swal.fire({
+            title:'Seleccione una cantidad mayor a 0', 
+            text:'', 
+            icon:'error',
+            confirmButtonColor: '#000',
+        })
+    }
+}
 //array
 const carrito = [];
 //Evento botones
@@ -79,7 +90,8 @@ addAncho.onclick = evento =>{
     let cantAncho = bAncho.children[0].value
     let montoAPagar = montoPagar(cantAncho,49)
     let bifeAncho = new Producto(1,"Bife Ancho",49,cantAncho,montoAPagar)
-    alertaAgregar(bifeAncho);
+    comprobarCant(cantAncho, bifeAncho);
+    
 }
 addAngosto.onclick = evento =>{
     evento.preventDefault();
@@ -87,7 +99,7 @@ addAngosto.onclick = evento =>{
     let cantAngosto = bAngosto.children[0].value
     let montoAPagar = montoPagar(cantAngosto,49)
     let bifeAngosto = new Producto(2,"Bife Angosto",49,cantAngosto,montoAPagar)
-    alertaAgregar(bifeAngosto);
+    comprobarCant(cantAngosto, bifeAngosto);
 }
 addBisteck.onclick = evento =>{
     evento.preventDefault();
@@ -95,7 +107,7 @@ addBisteck.onclick = evento =>{
     let cantBisteck = bisteckLomo.children[0].value
     let montoAPagar = montoPagar(cantBisteck,35)
     let bisteck = new Producto(3,"Bisteck Bola de Lomo", 35,cantBisteck,montoAPagar)
-    alertaAgregar(bisteck);
+    comprobarCant(cantBisteck, bisteck);
 }
 addCarneMolida.onclick = evento =>{
     evento.preventDefault();
@@ -103,7 +115,7 @@ addCarneMolida.onclick = evento =>{
     let cantCarneMolida = carneMol.children[0].value
     let montoAPagar = montoPagar(cantCarneMolida,32)
     let carneMolida = new Producto(4,"Carne Molida", 32,cantCarneMolida,montoAPagar)
-    alertaAgregar(carneMolida);
+    comprobarCant(cantCarneMolida, carneMolida);
 }
 addEntrana.onclick = evento =>{
     evento.preventDefault();
@@ -111,7 +123,7 @@ addEntrana.onclick = evento =>{
     let cantEntrana = entrana.children[0].value
     let montoAPagar = montoPagar(cantEntrana,45)
     let entranaFina = new Producto(5,"Entraña Fina",45,cantEntrana,montoAPagar)
-    alertaAgregar(entranaFina);
+    comprobarCant(cantEntrana, entranaFina);
 }
 addGuiso.onclick = evento =>{
     evento.preventDefault();
@@ -119,7 +131,7 @@ addGuiso.onclick = evento =>{
     let cantGuiso = guiso.children[0].value
     let montoAPagar = montoPagar(cantGuiso,33)
     let guisoEspecial = new Producto(6,"Guiso Especial", 33,cantGuiso,montoAPagar)
-    alertaAgregar(guisoEspecial);
+    comprobarCant(cantGuiso, guisoEspecial);
 }
 addLomoFino.onclick = evento =>{
     evento.preventDefault();
@@ -127,7 +139,7 @@ addLomoFino.onclick = evento =>{
     let cantLomo = lomo.children[0].value
     let montoAPagar = montoPagar(cantLomo,69)
     let lomoFino = new Producto(7,"Lomo Fino", 69,cantLomo,montoAPagar)
-    alertaAgregar(lomoFino);
+    comprobarCant(cantLomo, lomoFino);
 }
 addPicanha.onclick = evento =>{
     evento.preventDefault();
@@ -135,7 +147,7 @@ addPicanha.onclick = evento =>{
     let cantPicanha = picana.children[0].value
     let montoAPagar = montoPagar(cantPicanha,59)
     let picanha = new Producto(8,"Picaña",59,cantPicanha,montoAPagar)
-    alertaAgregar(picanha);
+    comprobarCant(cantPicanha, picanha);
 }
 addCostilla.onclick = evento =>{
     evento.preventDefault();
@@ -143,7 +155,7 @@ addCostilla.onclick = evento =>{
     let cantCostilla = costi.children[0].value
     let montoAPagar = montoPagar(cantCostilla,33)
     let costilla = new Producto(9,"Costilla", 33,cantCostilla,montoAPagar)
-    alertaAgregar(costilla);
+    comprobarCant(cantCostilla, costilla);
 }
 addMolida.onclick = evento =>{
     evento.preventDefault();
@@ -151,7 +163,7 @@ addMolida.onclick = evento =>{
     let cantMolida = molCerdo.children[0].value
     let montoAPagar = montoPagar(cantMolida,19)
     let molida = new Producto(10,"Molida",19,cantMolida,montoAPagar)
-    alertaAgregar(molida);
+    comprobarCant(cantMolida, molida);
 }
 addPanceta.onclick = evento =>{
     evento.preventDefault();
@@ -159,7 +171,7 @@ addPanceta.onclick = evento =>{
     let cantPanceta = pancetacpch.children[0].value
     let montoAPagar = montoPagar(cantPanceta,27)
     let panceta = new Producto(11,"Panceta c/p y c/h",27,cantPanceta,montoAPagar)
-    alertaAgregar(panceta);
+    comprobarCant(cantPanceta, panceta);
 }
 addSolomillo.onclick = evento =>{
     evento.preventDefault();
@@ -167,7 +179,7 @@ addSolomillo.onclick = evento =>{
     let cantSolomillo = solomi.children[0].value
     let montoAPagar = montoPagar(cantSolomillo,32)
     let solomillo = new Producto(12,"Solomillo",32,cantSolomillo,montoAPagar)
-    alertaAgregar(solomillo);
+    comprobarCant(cantSolomillo, solomillo);
 }
 addPechuga.onclick = evento =>{
     evento.preventDefault();
@@ -175,7 +187,7 @@ addPechuga.onclick = evento =>{
     let cantPechuga = pechuga.children[0].value
     let montoAPagar = montoPagar(cantPechuga,18)
     let pechugaPollo = new Producto(13,"Pechuga de pollo",18,cantPechuga,montoAPagar)
-    alertaAgregar(pechugaPollo);
+    comprobarCant(cantPechuga, pechugaPollo);
 }
 addHamburguesa.onclick = evento =>{
     evento.preventDefault();
@@ -183,7 +195,6 @@ addHamburguesa.onclick = evento =>{
     let cantHamburguesa = hambur.children[0].value
     let montoAPagar = montoPagar(cantHamburguesa,27.50)
     let hamburguesa = new Producto(14,"Hamburguesa clásica",27.50,cantHamburguesa,montoAPagar)
-    alertaAgregar(hamburguesa);
+    comprobarCant(cantHamburguesa, hamburguesa);
 }
-console.log(carrito.length)
 },2000)
