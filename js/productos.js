@@ -18,7 +18,6 @@ setTimeout(()=>{ //Asincronía para que este código empiece a funcionar luego d
     let contador;
     const aumentarCarrito = () =>{
         contador = carrito.length;
-        localStorage.setItem("contador",contador);
         numCarrito.innerHTML = contador;
         iconoCarrito.appendChild(numCarrito);
     }  
@@ -197,8 +196,8 @@ setTimeout(()=>{ //Asincronía para que este código empiece a funcionar luego d
         let hamburguesa = new Producto(14,"Hamburguesa clásica",27.50,cantHamburguesa,montoAPagar)
         comprobarCant(cantHamburguesa, hamburguesa);
     }
-    if(JSON.parse(localStorage.getItem("contador"))){ //para seguir mostrando el contador aún cuando se cambia de página y luego regresa
-        contador = JSON.parse(localStorage.getItem("contador"))
+    if(JSON.parse(localStorage.getItem("carrito"))){ //para seguir mostrando el contador aún cuando se cambia de página y luego regresa
+        contador = JSON.parse(localStorage.getItem("carrito")).length
         numCarrito.innerHTML = contador;
         iconoCarrito.appendChild(numCarrito);
     }
