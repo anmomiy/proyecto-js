@@ -23,7 +23,7 @@
     </li>
 </div>
 */
-let url = 'https://quinpro.free.beeceptor.com/' //en caso de superar los 50 requests, usar https://quinpro2.free.beeceptor.com 
+let url = 'https://quinpro2.free.beeceptor.com/' //en caso de superar los 50 requests, usar https://quinpro2.free.beeceptor.com 
 const traerDatos = async () =>{
     const resp = await fetch(url)
     const data = await resp.json()

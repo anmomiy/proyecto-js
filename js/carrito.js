@@ -56,12 +56,14 @@ let agregarBoton = (valor,lugar) =>{
 
 //Imprimir todos los productos del carrito
 if(productosSeleccionados.length > 0){
-    productosSeleccionados.forEach(element => {
-        agregarProducto(element.name,prodCarrito);
-        agregarProducto(element.price.toFixed(2),precCarrito);
-        agregarProducto(element.quantity,cantCarrito);
-        agregarProducto(element.total.toFixed(2),montoCarrito);
-        agregarBoton(element.name,posicionBoton);
+    
+    productosSeleccionados.forEach(e => {
+        const {name,price,quantity,total} = e
+        agregarProducto(name,prodCarrito);
+        agregarProducto(price.toFixed(2),precCarrito);
+        agregarProducto(quantity,cantCarrito);
+        agregarProducto(total.toFixed(2),montoCarrito);
+        agregarBoton(name,posicionBoton);
     });
     const totalCompra = productosSeleccionados.reduce((acc,el)=>acc+el.total,0);
     monto = document.createElement("p");

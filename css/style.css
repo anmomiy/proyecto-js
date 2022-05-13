@@ -477,13 +477,14 @@ footer {
 }
 .mainCarrito p{
   text-align: center;
+  margin-bottom: 20px;
 }
 .mainCarrito button{
   color: white;
   background-color: black;
-  padding: 4%;
+  padding: 3%;
   display:block;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
 }
 .textoAlerta{
   font-size: 24px;
@@ -498,6 +499,10 @@ footer {
   background-image: url("../assets/imagenes/carrito.jpg"); 
   width: 50px;
   height: 50px; 
+}
+button{
+  border-style: outset;
+  border-color: gray;
 }
 .iconoCarrito > p {
   text-align: center;
